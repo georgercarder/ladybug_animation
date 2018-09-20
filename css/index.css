@@ -1,0 +1,82 @@
+.main-ladybug-anim-cont {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.vert-anim {
+  will-change: transform;
+  transform: translateY(100vh);
+  animation-name: vertwalk;
+  animation-timing-function: linear;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+}
+
+@keyframes vertwalk {
+  0% {
+    transform: translateY(100vh);
+  }
+  
+  100% {
+    transform: translateY(-30vh);
+  }
+}
+
+.ladybug-cont {
+  height: 20rem;
+  width: 20rem;
+  position: relative;
+}
+
+.ladybug {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+#ladybug-outerlegs{
+  will-change: transform;
+  transform: rotate(7deg);
+  animation-name: outerwalk;
+  animation-duration: 0.25s;
+  animation-iteration-count: 20;
+}
+
+#ladybug-middlelegs {
+  will-change: transform:
+  transform: rotate(-7deg);
+  animation-name: middlewalk;
+  animation-duration: 0.25s;
+  animation-iteration-count: 20;
+}
+
+@keyframes outerwalk {
+  0% {
+    transform: rotate(7deg);
+  }
+
+  50% {
+    transform: rotate(-7deg);
+  }
+
+  100% {
+    transform: rotate(7deg);
+  }
+}
+
+
+@keyframes middlewalk {
+  0% {
+    transform: rotate(-7deg);
+  }
+
+  50% {
+    transform: rotate(7deg);
+  }
+
+  100% {
+    transform: rotate(-7deg);
+  }
+}
+
