@@ -32,11 +32,6 @@ app.get("/ladybug/css", function (req, res) {
 	console.log("served /css/index.css")
 });
 
-app.get("/ladybug/script", function (req, res) {
-	res.sendFile(__dirname + "/js/index.js");
-	console.log("served /js/index.js");
-});
-
 app.listen(4001, function(err) {
 	if (err) throw err;
 	console.log("App listening on port 4001");
